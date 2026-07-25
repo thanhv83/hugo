@@ -9,17 +9,15 @@ Hãy thận trọng khi sử dụng mã.Nếu màn hình hiển thị thông tin
 Link https://git-scm.com/download/win
 Truy cập vào trang chủ của Git: git-scm.comBấm vào dòng Click here to download để tải về bản cài đặt tự động (thường là bản 64-bit Git for Windows Setup).Sau khi tải xong, mở file .exe vừa tải về lên.Cứ bấm Next liên tục từ đầu đến cuối (giữ nguyên các tùy chọn mặc định của nhà sản xuất) cho đến khi bấm Install và hoàn thành.Bước 2: Cập nhật lại phần mềm VS Code (Quan trọng)Sau khi cài đặt Git xong, Windows đã nhận lệnh nhưng cửa sổ VS Code hiện tại của bạn thì chưa.Hãy tắt hoàn toàn phần mềm VS Code đi (Bấm dấu X ở góc màn hình).Mở lại VS Code và mở lại thư mục dự án Hugo của bạn.Bật lại Terminal (`Ctrl + ``) và gõ lệnh kiểm tra:bashgit --version
 Hãy thận trọng khi sử dụng mã.Nếu màn hình hiển thị thông tin dạng git version 2.X.X.windows.1 nghĩa là hệ thống đã nhận diện thành công 100%.
-# Kết nối với Kết nối Git từ máy tính Windows lên GitHub
-# 1. Khởi tạo Git cho thư mục Hugo của bạn (nếu trước đó chưa làm)
+Kết nối với Kết nối Git từ máy tính Windows lên GitHub
+Khởi tạo Git cho thư mục Hugo của bạn (nếu trước đó chưa làm)
 git init
-# 2. Tạo một file tên là .gitignore để không đẩy các file thừa lên GitHub
-# Bạn có thể tạo file này thủ công trong VS Code và dán nội dung sau vào:
+Tạo một file tên là .gitignore để không đẩy các file thừa lên GitHub
+Bạn có thể tạo file này thủ công trong VS Code và dán nội dung sau vào:
 echo "public/" >> .gitignore
 echo "resources/_gen/" >> .gitignore
 echo ".hugo_build.lock" >> .gitignore
-
-# 3. Gom tất cả các file lại để chuẩn bị tải lên
+Gom tất cả các file lại để chuẩn bị tải lên
 git add .
-
-# 4. Tạo một ghi chú cho lần tải lên này
+Tạo một ghi chú cho lần tải lên này
 git commit -m "First commit from Windows"
